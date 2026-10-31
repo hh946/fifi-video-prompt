@@ -2,7 +2,7 @@
 
 Video tools that are just code. Every frame is HTML / Canvas / JS, rendered frame by frame in Chrome. No generative video models.
 
-**English** · [中文](README.zh-CN.md) · [For AI agents](AGENTS.md)
+<p align="center"><b>English</b> · <a href="README.zh-CN.md">中文</a> · <a href="AGENTS.md">For AI agents</a></p>
 
 <p align="center"><img src="assets/promo.gif" width="100%"></p>
 <p align="center">Full promo: <!-- TODO: X · Bilibili · YouTube links --></p>

@@ -2,7 +2,7 @@
 
 纯代码做视频的工具。每一帧都是 HTML / Canvas / JS，由 Chrome 逐帧渲染，不用任何视频生成模型。
 
-[English](README.md) · **中文** · [给 AI agent 看的](AGENTS.md)
+<p align="center"><a href="README.md">English</a> · <b>中文</b> · <a href="AGENTS.md">给 AI agent 看的</a></p>
 
 <p align="center"><img src="assets/promo.gif" width="100%"></p>
 <p align="center">完整宣传片：<!-- TODO: X · B 站 · YouTube 链接 --></p>

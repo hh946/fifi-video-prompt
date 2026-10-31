@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions / 使用问题
+    url: https://github.com/huiq777/fifi-video/discussions
+    about: Ask how to use fifi-video here. 怎么用的问题请发这里。

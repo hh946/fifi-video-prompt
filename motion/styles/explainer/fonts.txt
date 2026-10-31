@@ -1,0 +1,5 @@
+ofl/notosanssc/NotoSansSC[wght].ttf
+ofl/notoserifsc/NotoSerifSC[wght].ttf
+ofl/intertight/InterTight[wght].ttf
+ofl/dmmono/DMMono-Medium.ttf
+ofl/unbounded/Unbounded[wght].ttf

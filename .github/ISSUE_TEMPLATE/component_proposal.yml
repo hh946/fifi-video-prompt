@@ -1,0 +1,30 @@
+name: Component proposal
+description: Suggest a new animation component. / 提议一个新的动画组件。
+labels: [component]
+body:
+  - type: textarea
+    id: look
+    attributes:
+      label: What it looks like / 长什么样
+      description: A full video of your own (MP4, drag it in), or a sketch if it doesn't exist yet. No copyrighted clips. / 你自己的完整视频（MP4，直接拖进来），还没做出来就放草图。别贴有版权的片段。
+    validations:
+      required: true
+  - type: textarea
+    id: when
+    attributes:
+      label: When to use it / 什么时候用
+      placeholder: "e.g. revealing a number that grew a lot / 例：讲一个数字涨了很多的时候"
+    validations:
+      required: true
+  - type: textarea
+    id: style
+    attributes:
+      label: Style / 风格
+      description: Tone, palette, how it moves. / 色调、配色、怎么动。
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Before submitting / 提交前
+      options:
+        - label: I searched existing components and issues. / 我查过现有组件和 issue。
+          required: true

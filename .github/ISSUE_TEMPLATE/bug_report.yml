@@ -1,0 +1,32 @@
+name: Bug report
+description: Something renders wrong or a script fails. / 画面不对或脚本报错。
+labels: [bug]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component or script / 组件或脚本
+      placeholder: XM.lens, scripts/build.sh …
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What you see vs. what you expected / 看到的 vs. 应该是的
+      description: Attach the full MP4 where it goes wrong (drag it in) and the time (e.g. 0:02.4). / 附上出问题的完整 MP4（直接拖进来），写明第几秒。
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Smallest scene.js that shows it / 能复现的最小 scene.js
+      render: js
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment / 环境
+      placeholder: macOS 15, Node 20, Chrome 141, ffmpeg 7
+    validations:
+      required: true

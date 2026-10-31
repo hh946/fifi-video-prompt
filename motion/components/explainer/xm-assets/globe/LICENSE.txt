@@ -1,0 +1,13 @@
+land.js: land mask data used by XM.globe.
+
+Source: Natural Earth 1:50m Physical Vectors, Land (ne_50m_land)
+  https://www.naturalearthdata.com/
+License: public domain. "All versions of Natural Earth raster + vector map data
+found on this website are in the public domain."
+  https://www.naturalearthdata.com/about/terms-of-use/
+Made with Natural Earth.
+
+Processing: the land-50m TopoJSON from world-atlas (npm, ISC, Mike Bostock; the data
+itself is Natural Earth) was rasterized to a 2048x1024 equirectangular mask, averaged
+down to 1024x512 with a 0.5 threshold, bit-packed and base64-encoded into land.js
+(window.XM_LAND).

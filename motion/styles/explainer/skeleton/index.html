@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fifi-video</title>
+<style>
+/* Base fonts, downloaded into fonts/ by new_project.sh */
+@font-face { font-family: HeiSC; src: url('fonts/NotoSansSCwght.ttf'); font-weight: 100 900; }
+@font-face { font-family: SerifSC; src: url('fonts/NotoSerifSCwght.ttf'); font-weight: 200 900; }
+@font-face { font-family: Grot; src: url('fonts/InterTightwght.ttf'); font-weight: 100 900; }
+@font-face { font-family: Mono; src: url('fonts/DMMono-Medium.ttf'); }
+/* Wide display face. Weight 900 uses the static Black file: strokes of the variable font show seams inside glyphs. */
+@font-face { font-family: Unb; src: url('fonts/Unboundedwght.ttf'); font-weight: 200 899; }
+@font-face { font-family: Unb; src: url('explainer/xm-assets/fonts/Unbounded-Black.ttf'); font-weight: 900; }
+/* Component fonts (licenses in explainer/xm-assets/fonts/) */
+@font-face { font-family: Stix; src: url('explainer/xm-assets/fonts/STIXTwoText-wght.ttf'); font-weight: 400 700; }
+@font-face { font-family: StixIt; src: url('explainer/xm-assets/fonts/STIXTwoText-Italic-wght.ttf'); font-weight: 400 700; }
+@font-face { font-family: Anton; src: url('explainer/xm-assets/fonts/Anton-Regular.ttf'); }
+@font-face { font-family: SedgwickAveDisplay; src: url('explainer/xm-assets/fonts/SedgwickAveDisplay-Regular.ttf'); }
+@font-face { font-family: FusionPixel; src: url('explainer/xm-assets/fonts/fusion-pixel-12px-proportional-zh_hans.ttf.woff2'); }
+@font-face { font-family: LongCang; src: url('explainer/xm-assets/fonts/LongCang-Regular.ttf'); }
+@font-face { font-family: AbrilFatface; src: url('explainer/xm-assets/fonts/AbrilFatface-Regular.ttf'); }
+@font-face { font-family: PlayIt; src: url('explainer/xm-assets/fonts/PlayfairDisplay-Italic-wght.ttf'); font-weight: 400 900; font-style: normal; }
+@font-face { font-family: Brush; src: url('explainer/xm-assets/fonts/MaShanZheng-Regular.ttf'); }
+@font-face { font-family: NumIt; src: url('explainer/xm-assets/fonts/DMSerifDisplay-Italic.ttf'); font-weight: 400; font-style: normal; }
+@font-face { font-family: Fraunces; src: url('explainer/xm-assets/fonts/Fraunces144-Black.ttf'); font-weight: 900; }
+html, body { margin: 0; padding: 0; overflow: hidden; width: 1920px; height: 1080px; background: #000; }
+text { font-family: HeiSC; }
+.zh { font-family: HeiSC; }
+.serif { font-family: SerifSC, HeiSC; }
+.grot { font-family: Grot, HeiSC; }
+.mono { font-family: Mono, HeiSC; }
+.unb { font-family: Unb, HeiSC; }
+</style>
+</head>
+<body>
+<div id="xk-stage"></div>
+<script src="vendor/three.min.js"></script>
+<script src="lib.js"></script>
+<script src="timeline.js"></script>
+<!-- Core: stage, shot sequencer, design system, shared helpers -->
+<script src="explainer/xk.js"></script>
+<script src="explainer/xk-shots.js"></script>
+<script src="explainer/xm-core.js"></script>
+<script src="explainer/xm-ds.js"></script>
+<script src="explainer/xm-kit.js"></script>
+<script src="explainer/xm-paper.js"></script>
+<script src="explainer/xm-tex.js"></script>
+<!-- Components. Loading one you don't call costs nothing. Docs: docs/components/ -->
+<script src="explainer/xs-screen.js"></script>
+<script src="explainer/xs-rank.js"></script>
+<script src="explainer/xs-text.js"></script>
+<script src="explainer/xm-popups.js"></script>
+<script src="explainer/xm-specimen.js"></script>
+<script src="explainer/xm-bubble.js"></script>
+<script src="explainer/xm-ribbons.js"></script>
+<script src="explainer/xm-globe.js"></script>
+<script src="explainer/xm-type.js"></script>
+<script src="explainer/xm-scan.js"></script>
+<script src="explainer/xm-corridor.js"></script>
+<script src="explainer/xm-lens.js"></script>
+<script src="explainer/xm-notify.js"></script>
+<script src="explainer/xm-squeeze.js"></script>
+<script src="explainer/xm-bigtype.js"></script>
+<script src="explainer/xm-tilt.js"></script>
+<script src="explainer/xm-roll.js"></script>
+<script src="explainer/xm-tag.js"></script>
+<script src="explainer/xm-emerge.js"></script>
+<script src="explainer/xm-cuts.js"></script>
+<script src="explainer/xm-title.js"></script>
+<script src="explainer/xm-pile.js"></script>
+<script src="explainer/xm-trans.js"></script>
+<script src="explainer/xm-trans2.js"></script>
+<script src="explainer/xm-strip.js"></script>
+<script src="explainer/xm-wall.js"></script>
+<script src="explainer/xm-thirds.js"></script>
+<script src="explainer/xm-doodle.js"></script>
+<script src="scene.js"></script>
+<script src="watermark.js"></script>
+<script src="render.js"></script>
+</body>
+</html>

@@ -1,29 +1,51 @@
-# fifi-video-prompt
+# fifi-video
 
-用纯代码做动画短视频的 prompt 合集：只用 HTML + SVG + JavaScript 画画面，Chrome 逐帧渲染，声音也由代码合成，全程不用任何图像、视频或音乐生成模型。
+Video tools that are just code. Every frame is HTML / Canvas / JS, rendered frame by frame in Chrome. No generative video models.
 
-把 prompt 整段复制给能写代码、能跑命令的 AI 编程助手，比如 Claude Code、Codex、Cursor Agent，就能从零做出一支完整的 MP4。
+**English** · [中文](README.zh-CN.md) · [For AI agents](AGENTS.md)
 
-## 合集
+<p align="center"><img src="assets/promo.gif" width="100%"></p>
+<p align="center">Full promo: <!-- TODO: X · Bilibili · YouTube links --></p>
 
-| 作品 | 预览 | 说明 |
+## What's open
+
+| | Module | Status |
 |---|---|---|
-| [AI 大战验证码](ai-vs-captcha/) | <img src="ai-vs-captcha/preview.gif" width="320"> | 30 秒横屏 1920×1080。鼠标光标想通过「我不是机器人」验证，一路被识破，再学着装人类。朋克拼贴杂志风，炸裂节奏，可选 120BPM 代码合成配乐。 |
+| <img src="assets/motion-components.jpg" width="360"> | **[motion](motion/)**<br>29 animation components + render pipeline | ✅ v0.1 |
+| | Rough cut for talking-head videos | soon |
+| | BGM & sound effects | soon |
+| | Cover prompts | soon |
+| | Titles | soon |
+| | [prompts/](prompts/)<br>Full one-prompt videos | ✅ |
 
-## 需要的环境
+## Why these components
 
-- Node.js 18+ 和 Google Chrome（或 Chromium），用 Playwright / Puppeteer 逐帧截图
-- Python 3，带 numpy、scipy，用来合成声音
-- ffmpeg，用来合成 MP4
+- **Hand-picked with human feedback, RLHF-style.** I built each one through rounds of render → frame-by-frame review → rating → fix. Only the ones rated A or B ship; the rest were cut. That's why they don't look AI-made.
+- **Reusable.** A component is only a frame. Words, images, colors and timing are all parameters, so the same component works for any topic.
+- **Any AI can use them.** The design lives in the components. The agent only fills in words and times, so you don't need the newest model. Any coding agent that can read files and run shell commands will do. Tested: given only this repo, Claude Sonnet 5.5 and Claude Haiku 5.5 each made a 15-second promo that passed every build check.
 
-## 怎么用
+## Quick start
 
-1. 打开对应作品目录下的 `prompt.md`。
-2. 把「任务」以下的全部内容复制给你的 AI 编程助手。
-3. 它会依次写代码、渲染 900 帧、合成声音、出 MP4，最后按 prompt 里的自检清单抽帧检查。
+Point your coding agent (Claude Code, Codex, Cursor…) at this repo and say:
 
-每个 prompt 都写死了规格、节拍表、视觉风格、声音和自检清单，照着做出来的结果会和预览基本一致。细节会因为模型不同而有出入。
+> Use fifi-video/motion to make a 10-second 1920×1080 intro that says "Hello, world".
 
-## 许可证
+Or by hand:
 
-[MIT](LICENSE)：可以随意使用、修改、转发，包括商用，只需保留版权声明。
+```bash
+cd motion && npm install
+bash scripts/new_project.sh ../my-video
+bash scripts/build.sh ../my-video      # frames → sound → my-video.mp4
+```
+
+Needs Node 18+, Google Chrome, Python 3 (numpy), ffmpeg.
+
+## Contributing
+
+Bug reports, fixes and new components are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+Code: [MIT](LICENSE). Bundled fonts keep their own OFL / Apache licenses (`motion/components/explainer/xm-assets/fonts/`).
+
+Made by 小火火Fifi.

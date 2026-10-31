@@ -1,0 +1,9 @@
+{
+  "name": "fifi-video-motion",
+  "private": true,
+  "description": "Code-only motion graphics components and render pipeline",
+  "license": "MIT",
+  "dependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}

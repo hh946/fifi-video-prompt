@@ -5,7 +5,7 @@ Video tools that are just code. Every frame is HTML / Canvas / JS, rendered fram
 <p align="center"><b>English</b> · <a href="README.zh-CN.md">中文</a> · <a href="AGENTS.md">For AI agents</a></p>
 
 <p align="center"><img src="assets/promo.gif" width="100%"></p>
-<p align="center">Full promo: <a href="https://x.com/jay187950667114/status/2116361956378460558">X</a> <!-- TODO: Bilibili · YouTube links --></p>
+<p align="center"><a href="https://x.com/jay187950667114/status/2116361956378460558">Full promo @ X</a> <!-- TODO: Bilibili · YouTube links --></p>
 
 ## What's open
 

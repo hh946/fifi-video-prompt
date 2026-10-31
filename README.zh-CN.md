@@ -5,7 +5,7 @@
 <p align="center"><a href="README.md">English</a> · <b>中文</b> · <a href="AGENTS.md">给 AI agent 看的</a></p>
 
 <p align="center"><img src="assets/promo.gif" width="100%"></p>
-<p align="center">完整宣传片：<a href="https://x.com/jay187950667114/status/2116361956378460558">X</a> <!-- TODO: B 站 · YouTube 链接 --></p>
+<p align="center"><a href="https://x.com/jay187950667114/status/2116361956378460558">完整宣传片 @ X</a> <!-- TODO: B 站 · YouTube 链接 --></p>
 
 ## 已开放
 
